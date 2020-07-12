@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'relax_job_scrapy.spiders'
 #USER_AGENT = 'relax_job_scrapy (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -25,7 +25,7 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -86,3 +86,25 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+FEED_EXPORT_FIELDS = [
+    "サロン名",
+    "職種_役職",
+    "給与",
+    "給与備考",
+    "住所",
+    "アクセス",
+    "勤務時間",
+    "特徴",
+    "仕事内容",
+    "必要経験",
+    "必要資格",
+    "休日",
+    "福利厚生",
+    "求める人物像",
+    "役職の詳細",
+    "企業の夢_想い",
+    "PR",
+    "企業名",
+    "求人ページurl",
+]
